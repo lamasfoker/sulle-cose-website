@@ -1,0 +1,13 @@
+baseURL: 'https://sullecose.it/'
+languageCode: 'it-IT'
+defaultContentLanguage: it
+title: 'Sulle Cose'
+enableGitInfo: true
+enableRobotsTXT: true
+Params:
+  author:
+    display_name: Io
+sitemap:
+  changefreq: daily
+  filename: sitemap.xml
+  priority: 0.8
