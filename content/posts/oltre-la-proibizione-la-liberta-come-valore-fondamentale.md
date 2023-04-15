@@ -2,7 +2,7 @@
 title: "Oltre la Proibizione: la Libertà come Valore Fondamentale"
 date: 2023-04-11T21:59:02+02:00
 draft: true
-description: <inserisci una descrizione breve>
+description: La proibizione alimenta la trasgressione. Scopri come una visione basata sulla libertà e comprensione può offrire una soluzione sostenibile. Leggi ora per creare una società inclusiva.
 slug: oltre-la-proibizione-la-liberta-come-valore-fondamentale
 ---
 

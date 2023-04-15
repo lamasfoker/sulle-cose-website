@@ -52,7 +52,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="{{ $.Param "theme_color" }}">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    {{ $style := resources.Get "build/app.css" }}
+    {{ $secureStyle := $style | resources.Fingerprint "sha512" }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $secureStyle.Data.Integrity }}">
+
+    {{ $script := resources.Get "build/app.js" }}
+    {{ $secureScript := $script | resources.Fingerprint "sha512" }}
+    <script src="{{ $script.Permalink }}" integrity="{{ $secureScript.Data.Integrity }}"></script>
 </head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
 
@@ -60,9 +66,9 @@
     <div js-progress-bar class="h-1 z-20 top-0" style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
 
     <div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-center mt-0 py-3">
-        <div class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl">
+        <a href="https://www.google.com/search?q=site%3Awww.sullecose.it" target="_blank" class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl">
             Sulle Cose
-        </div>
+        </a>
     </div>
 </nav>
 
@@ -79,35 +85,15 @@
         </header>
 
         <article>
-            <p class="first-letter:text-6xl first-letter:font-bold first-letter:text-slate-900 first-letter:mr-3 first-letter:float-left py-6">
-                Welcome fellow <a class="text-green-500 no-underline hover:underline" href="https://www.tailwindcss.com">Tailwind CSS</a> and miminal monochrome blog fan. This starter template provides a starting point to create your own minimal monochrome blog using Tailwind CSS and vanilla Javascript.
-            </p>
-
-            <p class="py-6">The basic blog page layout is available and all using the default Tailwind CSS classes (although there are a few hardcoded style tags). If you are going to use this in your project, you will want to convert the classes into components.</p>
-
-            <h2 class="py-2 font-sans">Heading 2</h2>
-            <h3 class="py-2 font-sans">Heading 3</h3>
-            <h4 class="py-2 font-sans">Heading 4</h4>
-            <h5 class="py-2 font-sans">Heading 5</h5>
-            <h6 class="py-2 font-sans">Heading 6</h6>
-
-            <p class="py-6">Sed dignissim lectus ut tincidunt vulputate. Fusce tincidunt lacus purus, in mattis tortor sollicitudin pretium. Phasellus at diam posuere, scelerisque nisl sit amet, tincidunt urna. Cras nisi diam, pulvinar ut molestie eget, eleifend ac magna. Sed at lorem condimentum, dignissim lorem eu, blandit massa. Phasellus eleifend turpis vel erat bibendum scelerisque. Maecenas id risus dictum, rhoncus odio vitae, maximus purus. Etiam efficitur dolor in dolor molestie ornare. Aenean pulvinar diam nec neque tincidunt, vitae molestie quam fermentum. Donec ac pretium diam. Suspendisse sed odio risus. Nunc nec luctus nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec nulla eget sem dictum elementum.</p>
-
-            <ol class="list-disc list-inside">
-                <li class="py-3">Maecenas accumsan lacus sit amet elementum porta. Aliquam eu libero lectus. Fusce vehicula dictum mi. In non dolor at sem ullamcorper venenatis ut sed dui. Ut ut est quam. Suspendisse quam quam, commodo sit amet placerat in, interdum a ipsum. Morbi sit amet tellus scelerisque tortor semper posuere.</li>
-                <li class="py-3">Morbi varius posuere blandit. Praesent gravida bibendum neque eget commodo. Duis auctor ornare mauris, eu accumsan odio viverra in. Proin sagittis maximus pharetra. Nullam lorem mauris, faucibus ut odio tempus, ultrices aliquet ex. Nam id quam eget ipsum luctus hendrerit. Ut eros magna, eleifend ac ornare vulputate, pretium nec felis.</li>
-                <li class="py-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc vitae pretium elit. Cras leo mauris, tristique in risus ac, tristique rutrum velit. Mauris accumsan tempor felis vitae gravida. Cras egestas convallis malesuada. Etiam ac ante id tortor vulputate pretium. Maecenas vel sapien suscipit, elementum odio et, consequat tellus.</li>
-            </ol>
-
-            <blockquote class="border-l-4 border-green-500 italic my-8 pl-8 md:pl-12">Example of blockquote - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.</blockquote>
+            {{ $.Page.Content }}
         </article>
 
         <div class="flex items-center justify-evenly mt-12">
             <div class="mx-3 relative group">
-                <button js-send-cudos="{{ $.Page.Slug }}" class="flex items-center">
+                <applause-button url="{{ $.Page.Permalink }}" class="!flex items-center">
                     <svg class="w-14 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-label="applusi"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.37.83L12 3.28l.63-2.45h-1.26zM13.92 3.95l1.52-2.1-1.18-.4-.34 2.5zM8.59 1.84l1.52 2.11-.34-2.5-1.18.4zM18.52 18.92a4.23 4.23 0 0 1-2.62 1.33l.41-.37c2.39-2.4 2.86-4.95 1.4-7.63l-.91-1.6-.8-1.67c-.25-.56-.19-.98.21-1.29a.7.7 0 0 1 .55-.13c.28.05.54.23.72.5l2.37 4.16c.97 1.62 1.14 4.23-1.33 6.7zm-11-.44l-4.15-4.15a.83.83 0 0 1 1.17-1.17l2.16 2.16a.37.37 0 0 0 .51-.52l-2.15-2.16L3.6 11.2a.83.83 0 0 1 1.17-1.17l3.43 3.44a.36.36 0 0 0 .52 0 .36.36 0 0 0 0-.52L5.29 9.51l-.97-.97a.83.83 0 0 1 0-1.16.84.84 0 0 1 1.17 0l.97.97 3.44 3.43a.36.36 0 0 0 .51 0 .37.37 0 0 0 0-.52L6.98 7.83a.82.82 0 0 1-.18-.9.82.82 0 0 1 .76-.51c.22 0 .43.09.58.24l5.8 5.79a.37.37 0 0 0 .58-.42L13.4 9.67c-.26-.56-.2-.98.2-1.29a.7.7 0 0 1 .55-.13c.28.05.55.23.73.5l2.2 3.86c1.3 2.38.87 4.59-1.29 6.75a4.65 4.65 0 0 1-4.19 1.37 7.73 7.73 0 0 1-4.07-2.25zm3.23-12.5l2.12 2.11c-.41.5-.47 1.17-.13 1.9l.22.46-3.52-3.53a.81.81 0 0 1-.1-.36c0-.23.09-.43.24-.59a.85.85 0 0 1 1.17 0zm7.36 1.7a1.86 1.86 0 0 0-1.23-.84 1.44 1.44 0 0 0-1.12.27c-.3.24-.5.55-.58.89-.25-.25-.57-.4-.91-.47-.28-.04-.56 0-.82.1l-2.18-2.18a1.56 1.56 0 0 0-2.2 0c-.2.2-.33.44-.4.7a1.56 1.56 0 0 0-2.63.75 1.6 1.6 0 0 0-2.23-.04 1.56 1.56 0 0 0 0 2.2c-.24.1-.5.24-.72.45a1.56 1.56 0 0 0 0 2.2l.52.52a1.56 1.56 0 0 0-.75 2.61L7 19a8.46 8.46 0 0 0 4.48 2.45 5.18 5.18 0 0 0 3.36-.5 4.89 4.89 0 0 0 4.2-1.51c2.75-2.77 2.54-5.74 1.43-7.59L18.1 7.68z"></path></svg>
-                    <span>12</span>
-                </button>
+                    <span class="animate-spin">&#10710;</span>
+                </applause-button>
                 <span class="bg-white text-sm invisible opacity-0 group-active:opacity-100 group-active:visible absolute px-4 py-2 -right-2 -top-11 rounded-md whitespace-nowrap">Grazie!</span>
             </div>
             <div class="mx-3 relative group">
@@ -148,58 +134,7 @@
 </footer>
 
 <script>
-    document.querySelector('[js-send-cudos]').addEventListener('click', async function() {
-        const slugKey = 'are-cudos-sent-for-' + this.getAttribute('js-send-cudos');
-        if (localStorage.getItem(slugKey) !== 'yes') {
-            let response = await fetch('/api/cudos', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    url: document.querySelector('[rel="canonical"]').getAttribute('href')
-                })
-            });
 
-            if (response.ok) {
-                let data = await response.json();
-                document.querySelector('[js-cudos-count] > span').innerText = data.cudos;
-                localStorage.setItem(slugKey, 'yes');
-            }
-        }
-    });
-
-    document.querySelector('[js-copy-to-clipboard]').addEventListener('click', async function() {
-        let canonical = document.querySelector('[rel="canonical"]')
-        if (canonical) {
-            await navigator.clipboard.writeText(canonical.getAttribute('href'));
-        }
-    });
-
-    document.addEventListener('scroll', function() {
-        let h = document.documentElement,
-            b = document.body,
-            st = 'scrollTop',
-            sh = 'scrollHeight',
-            progress = document.querySelector('[js-progress-bar]'),
-            navContent = document.querySelector("nav"),
-            scroll,
-            scrollPos;
-
-        scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
-        progress.style.setProperty('--scroll', scroll + '%');
-        scrollPos = window.scrollY;
-
-        if (scrollPos > 10) {
-            navContent.classList.remove("bg-gray-100");
-            navContent.classList.add("bg-white");
-            navContent.classList.add("shadow");
-        } else {
-            navContent.classList.remove("bg-white");
-            navContent.classList.remove("shadow");
-            navContent.classList.add("bg-gray-100");
-        }
-    });
 </script>
 
 </body>

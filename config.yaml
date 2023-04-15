@@ -1,4 +1,4 @@
-baseURL: 'https://sullecose.it/'
+baseURL: 'https://www.sullecose.it/'
 languageCode: 'it-IT'
 defaultContentLanguage: it
 title: 'Sulle Cose'
@@ -11,3 +11,7 @@ sitemap:
   changefreq: daily
   filename: sitemap.xml
   priority: 0.8
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

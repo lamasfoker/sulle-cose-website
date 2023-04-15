@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+
+article > p:first-child {
+    @apply first-letter:text-6xl first-letter:font-bold first-letter:text-slate-900 first-letter:mr-3 first-letter:float-left py-6;
+}
+
+article p {
+    @apply py-6;
+}
+
+article a {
+    @apply text-green-500 no-underline hover:underline;
+}
+
+article h2, article h3, article h4, article h5, article h6 {
+    @apply py-2 font-sans;
+}
+
+article blockquote {
+    @apply border-l-4 border-green-500 italic my-8 pl-8 md:pl-12;
+}
+
+article ol {
+    @apply list-disc list-inside;
+}
+
+article li {
+    @apply py-3;
+}
+
+applause-button > div:first-child {
+    @apply hidden;
+}
+
+@tailwind utilities;
