@@ -30,6 +30,8 @@ jobs:
         run: |
           pwd
           ls -la
+          cd ..
+          ls -la
           npm install
           npm run build
       - name: Install Hugo CLI
