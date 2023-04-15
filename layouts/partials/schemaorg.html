@@ -1,0 +1,12 @@
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "author": "{{ $.Param "author.display_name" }}",
+        "name": "{{ $.Page.Title }}",
+        "url": "{{ $.Page.Permalink }}",
+        "description": "{{ $.Page.Description }}",
+        "datePublished": "{{ $.Page.PublishDate.Format ($.Param "iso8601") }}",
+        "dateModified": "{{ $.Page.Lastmod.Format ($.Param "iso8601") }}"
+    }
+</script>

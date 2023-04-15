@@ -1,103 +1,40 @@
 <!DOCTYPE html>
 <html lang="{{ $.Page.Language.Lang }}">
-<head>
-    <meta charset="utf-8">
-    <title>{{ $.Page.Title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <head>
+        <meta charset="utf-8">
+        <title>404 Pagina non trovata</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <meta property="og:site_name" content="{{ $.Site.Title }}">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="{{ $.Page.Permalink }}">
+        {{ partial "favicon.html" . }}
+        {{ partial "apple.html" . }}
+        {{ partial "assets.html" . }}
+    </head>
+    <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+        {{ partial "nav.html" . }}
 
-    <link rel="icon" type="image/png" href="/images/favicon.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/images/favicon_2x.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/images/favicon_6x.png" sizes="96x96">
+        <main class="container w-full md:max-w-3xl mx-auto py-12">
+            <div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
 
-    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
-    <link rel="apple-touch-startup-image" href="/launch.png">
-    <meta name="apple-mobile-web-app-title" content="{{ $.Site.Title }}">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="{{ $.Param " theme_color" }}">
+                <header class="font-sans py-5">
+                    <h1 class="font-bold font-sans break-normal text-gray-900 pb-3 text-3xl md:text-4xl">Oops! Qualcosa è andato storto</h1>
+                </header>
 
-    {{ $style := resources.Get "build/app.css" }}
-    {{ $secureStyle := $style | resources.Fingerprint "sha512" }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}?{{ $secureStyle.Data.Integrity }}">
+                <p class="py-6">
+                    La pagina che stavi cercando non esiste. Di seguito trovi gli ultimi 5 post del mio blog:
+                </p>
 
-    {{ $script := resources.Get "build/app.js" }}
-    {{ $secureScript := $script | resources.Fingerprint "sha512" }}
-    <script src="{{ $script.Permalink }}?{{ $secureScript.Data.Integrity }}"></script>
-</head>
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+                <ul class="list-disc list-inside">
+                    {{ range first 5 .Site.Pages }}
+                    <li class="py-3">
+                        <a href="{{ .Permalink }}" class="font-bold text-gray-900 hover:underline">{{ .Title }}</a>
+                        <p>{{ .Description }}</p>
+                    </li>
+                    {{ end }}
+                </ul>
 
-<nav class="fixed w-full z-10 top-0">
-    <div js-progress-bar class="h-1 z-20 top-0"
-         style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
-
-    <div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-center mt-0 py-3">
-        <a href="https://www.google.com/search?q=site%3Awww.sullecose.it" target="_blank"
-           class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl">
-            Sulle Cose
-        </a>
-    </div>
-</nav>
-
-<main class="container w-full md:max-w-3xl mx-auto py-12">
-    <div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
-
-        <header class="font-sans py-5">
-            <h1 class="font-bold font-sans break-normal text-gray-900 pb-3 text-3xl md:text-4xl">Oops! Qualcosa è andato storto</h1>
-        </header>
-
-        <p class="py-6">
-            La pagina che stavi cercando non esiste. Di seguito trovi gli ultimi 5 post del mio blog:
-        </p>
-
-        <ul class="list-disc list-inside">
-            {{ range first 5 .Site.Pages }}
-            <li class="py-3">
-                <a href="{{ .Permalink }}" class="font-bold text-gray-900 hover:underline">{{ .Title }}</a>
-                <p>{{ .Description }}</p>
-            </li>
-            {{ end }}
-        </ul>
-
-    </div>
-</main>
-
-<footer class="bg-white border-t border-gray-400 shadow">
-    <div class="container max-w-4xl mx-auto flex py-8">
-
-        <div class="w-full mx-auto flex flex-wrap">
-            <div class="flex w-full md:w-1/2 ">
-                <div class="px-8">
-                    <h3 class="font-bold text-gray-900">Cosa Faccio</h3>
-                    <p class="py-4 text-gray-600 text-sm">
-                        Scrivo sulle cose che mi passano per la testa. Spesso sono cose che ho letto, altre volte sono
-                        cose che ho sentito, quasi mai sono cose che ho pensato per primo.
-                    </p>
-                </div>
             </div>
+        </main>
 
-            <div class="flex w-full md:w-1/2">
-                <div class="px-8">
-                    <h3 class="font-bold text-gray-900">Ti piace l'articolo?</h3>
-                    <p class="py-4 text-gray-600 text-sm">
-                        Iscriviti al <a class="text-green-500 no-underline hover:underline" href="/index.xml">Feed
-                        RSS</a> per ricevere gli aggiornamenti.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</footer>
-
-<script>
-
-</script>
-
-</body>
+        {{ partial "footer.html" . }}
+    </body>
 </html>
