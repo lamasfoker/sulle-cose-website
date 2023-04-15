@@ -20,4 +20,3 @@ markup:
 disableKinds:
   - taxonomy
   - term
-  - home
