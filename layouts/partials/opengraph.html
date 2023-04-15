@@ -3,4 +3,5 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="{{ $.Page.Permalink }}">
 <meta property="og:description" content="{{ $.Page.Description }}">
-<meta property="og:image" content="{{ $.Param "header_image" }}">
+{{ $icon192 := resources.Get "build/icon_192x192.png" }}
+<meta property="og:image" content="{{ $icon192.Permalink }}">

@@ -2,4 +2,5 @@
 <meta property="twitter:url" content="{{ $.Page.Permalink }}">
 <meta name="twitter:title" content="{{ $.Page.Title }}">
 <meta name="twitter:description" content="{{ $.Page.Description }}">
-<meta name="twitter:image" content="{{ $.Param "header_image" }}">
+{{ $icon192 := resources.Get "build/icon_192x192.png" }}
+<meta name="twitter:image" content="{{ $icon192.Permalink }}">
