@@ -54,11 +54,11 @@
 
     {{ $style := resources.Get "build/app.css" }}
     {{ $secureStyle := $style | resources.Fingerprint "sha512" }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $secureStyle.Data.Integrity }}">
+    <link rel="stylesheet" href="{{ $style.Permalink }}?{{ $secureStyle.Data.Integrity }}">
 
     {{ $script := resources.Get "build/app.js" }}
     {{ $secureScript := $script | resources.Fingerprint "sha512" }}
-    <script src="{{ $script.Permalink }}" integrity="{{ $secureScript.Data.Integrity }}"></script>
+    <script src="{{ $script.Permalink }}?{{ $secureScript.Data.Integrity }}"></script>
 </head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
 
