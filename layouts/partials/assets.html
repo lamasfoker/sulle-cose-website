@@ -1,3 +1,9 @@
+{{ range resources.Match "build/icon_*png" }}{{ .Publish }}{{ end }}
+
+{{ $manifest := resources.Get "build/manifest.json" }}
+{{ $secureManifest := $manifest | resources.Fingerprint "sha512" }}
+<link rel="manifest" href="{{ $manifest.Permalink }}?{{ $secureManifest.Data.Integrity }}" />
+
 {{ $style := resources.Get "build/app.css" }}
 {{ $secureStyle := $style | resources.Fingerprint "sha512" }}
 <link rel="stylesheet" href="{{ $style.Permalink }}?{{ $secureStyle.Data.Integrity }}">

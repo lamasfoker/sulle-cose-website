@@ -6,7 +6,7 @@ enableGitInfo: true
 enableRobotsTXT: true
 Params:
   author:
-    display_name: Io
+    display_name: "🐙 Io"
   iso8601: 2006-01-02T15:04:05-07:00
   readable: 2 Gennaio 2006
 sitemap:

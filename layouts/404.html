@@ -5,7 +5,6 @@
         <title>404 Pagina non trovata</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        {{ partial "favicon.html" . }}
         {{ partial "apple.html" . }}
         {{ partial "assets.html" . }}
     </head>
@@ -25,10 +24,10 @@
 
                 <ul class="list-disc list-inside">
                     {{ range first 5 .Site.Pages }}
-                    <li class="py-3">
-                        <a href="{{ .Permalink }}" class="font-bold text-gray-900 hover:underline">{{ .Title }}</a>
-                        <p>{{ .Description }}</p>
-                    </li>
+                        <li class="py-3">
+                            <a href="{{ .Permalink }}" class="font-bold text-gray-900 hover:underline">{{ .Title }}</a>
+                            <p>{{ .Description }}</p>
+                        </li>
                     {{ end }}
                 </ul>
 
