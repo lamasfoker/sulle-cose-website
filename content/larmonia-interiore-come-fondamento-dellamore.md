@@ -1,9 +1,7 @@
 ---
 title: "L'armonia interiore come fondamento dell'amore"
 date: 2023-04-14T23:52:31+02:00
-draft: true
-description: <inserisci una descrizione breve>
-slug: larmonia-interiore-come-fondamento-dellamore
+description: "Per relazioni durature, dobbiamo trovare equilibrio interiore e amare noi stessi. La mindfulness e l'autocompassione aiutano. Ricerca: benessere interiore = relazioni più appaganti e durature."
 ---
 
 Sono sempre stato affascinato dai modi in cui le persone si connettono emotivamente e come questi legami influenzano le nostre vite. Durante i miei viaggi e le mie esperienze, ho notato un filo conduttore che sembra unirsi a tutto: la necessità di trovare un equilibrio interiore prima di poter stabilire relazioni profonde e autentiche con gli altri. In altre parole, dobbiamo riuscire a trovare la pace dentro di noi, se vogliamo essere in grado di amare veramente.

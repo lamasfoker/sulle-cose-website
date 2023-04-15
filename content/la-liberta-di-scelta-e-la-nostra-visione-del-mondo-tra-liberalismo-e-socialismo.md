@@ -1,9 +1,7 @@
 ---
 title: "La libertà di scelta e la nostra visione del mondo: tra liberalismo e socialismo"
 date: 2023-04-13T00:02:25+02:00
-draft: true
-description: <inserisci una descrizione breve>
-slug: la-liberta-di-scelta-e-la-nostra-visione-del-mondo-tra-liberalismo-e-socialismo
+description: Il dibattito tra liberalismo e socialismo mira a promuovere la libertà e il benessere degli individui. La "spinta gentile" di Thaler e Sunstein offre una soluzione intermedia per conciliare libertà e responsabilità collettiva.
 ---
 
 Viviamo in un mondo in continua evoluzione, in cui le ideologie politiche e sociali prendono forme diverse nel tentativo di rispondere alle esigenze di una società in costante cambiamento. Tra le molteplici visioni del mondo, due ideologie continuano a dominare il dibattito: il liberalismo e il socialismo. Entrambe cercano di promuovere la libertà e il benessere degli individui, ma utilizzano metodi diversi per raggiungere tale obiettivo. In questo articolo, esploreremo le differenze tra queste due visioni e ci chiederemo se esista una soluzione intermedia che possa conciliare le due.

@@ -37,7 +37,7 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-      - name: Compile Tailwind CSS
+      - name: Build assets
         run: |
           npm install
           npm run build

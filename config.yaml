@@ -15,3 +15,7 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+disableKinds:
+  - taxonomy
+  - term
+  - home

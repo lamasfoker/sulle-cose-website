@@ -1,9 +1,7 @@
 ---
 title: "Circondarsi di persone migliori: il segreto di una vita ben vissuta"
 date: 2023-04-14T00:28:55+02:00
-draft: true
-description: <inserisci una descrizione breve>
-slug: circondarsi-di-persone-migliori-il-segreto-di-una-vita-ben-vissuta
+description: Circondarsi di persone migliori di sé per la crescita personale. Scegliere attentamente le persone con cui condividiamo il nostro percorso è importante per dare il meglio in ogni aspetto della vita.
 ---
 
 Se mi chiedessero di descrivere la mia visione del mondo, direi che è un mosaico di colori e forme, in continua evoluzione, in cui ognuno di noi porta il proprio mattoncino per costruire qualcosa di unico e armonioso. In questo affascinante quadro, ho imparato un segreto che ha cambiato la mia vita: circondarsi di persone migliori di sé.
