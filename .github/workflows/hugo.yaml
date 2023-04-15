@@ -28,6 +28,8 @@ jobs:
     steps:
       - name: Compile Tailwind CSS
         run: |
+          pwd
+          ls -la
           npm install
           npm run build
       - name: Install Hugo CLI
