@@ -2,12 +2,12 @@
 
 {{ $manifest := resources.Get "build/manifest.json" }}
 {{ $secureManifest := $manifest | resources.Fingerprint "sha512" }}
-<link rel="manifest" href="{{ $manifest.Permalink }}?{{ $secureManifest.Data.Integrity }}" />
+<link rel="manifest" href="{{ $manifest.RelPermalink }}?{{ $secureManifest.Data.Integrity }}" />
 
 {{ $style := resources.Get "build/app.css" }}
 {{ $secureStyle := $style | resources.Fingerprint "sha512" }}
-<link rel="stylesheet" href="{{ $style.Permalink }}?{{ $secureStyle.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $style.RelPermalink }}?{{ $secureStyle.Data.Integrity }}">
 
 {{ $script := resources.Get "build/app.js" }}
 {{ $secureScript := $script | resources.Fingerprint "sha512" }}
-<script src="{{ $script.Permalink }}?{{ $secureScript.Data.Integrity }}"></script>
+<script src="{{ $script.RelPermalink }}?{{ $secureScript.Data.Integrity }}"></script>
