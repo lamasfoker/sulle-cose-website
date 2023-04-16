@@ -27,7 +27,7 @@
                     <address>
                         <span class="text-sm md:text-base font-normal text-gray-600" >{{ $.Param "author.display_name" }}</span>
                         &bull;
-                        <time class="text-sm md:text-base font-normal text-gray-600" datetime="{{ $.Page.PublishDate.Format ($.Param "iso8601") }}">{{ $.Page.PublishDate.Format ($.Param "readable") }}</time>
+                        <time class="text-sm md:text-base font-normal text-gray-600" datetime="{{ $.Page.PublishDate.Format ($.Param "iso8601") }}" languageCode="{{ $.Site.LanguageCode }}" ></time>
                     </address>
                 </header>
 

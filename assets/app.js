@@ -2,6 +2,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     const $ = document.querySelector.bind(document);
     const $$ = document.querySelectorAll.bind(document);
 
+    const $publicationDate = $('time');
+    if ($publicationDate) {
+        let options = {'day': '2-digit', 'month': 'long', 'year': 'numeric'};
+        $publicationDate.innerText = new Date().toLocaleString($publicationDate.getAttribute('languageCode'), options);
+    }
+
     const $articleLinks = $$('article a');
     if ($articleLinks) {
         $articleLinks.forEach(link => {

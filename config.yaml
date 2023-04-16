@@ -8,7 +8,6 @@ Params:
   author:
     display_name: "🐙 Io"
   iso8601: 2006-01-02T15:04:05-07:00
-  readable: 2 Gennaio 2006
   og_type: article
 sitemap:
   changefreq: daily
