@@ -1,5 +1,3 @@
-{{ range resources.Match "build/icon_*png" }}{{ .Publish }}{{ end }}
-
 {{ $manifest := resources.Get "build/manifest.json" }}
 {{ $secureManifest := $manifest | resources.Fingerprint "sha512" }}
 <link rel="manifest" href="{{ $manifest.RelPermalink }}?{{ $secureManifest.Data.Integrity }}" />
