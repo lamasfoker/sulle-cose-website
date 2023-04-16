@@ -18,10 +18,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
 
-    if ('serviceWorker' in navigator) {
-        await navigator.serviceWorker.register('/service-worker.js')
-    }
-
     const $applauseButton = $('applause-button');
     const $applauseButtonLabel = $('applause-button > span');
     if ($applauseButton && $applauseButtonLabel) {
