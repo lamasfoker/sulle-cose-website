@@ -1,6 +1,4 @@
-{{ $manifest := resources.Get "build/manifest.json" }}
-{{ $secureManifest := $manifest | resources.Fingerprint "sha512" }}
-<link rel="manifest" href="{{ $manifest.RelPermalink }}?{{ $secureManifest.Data.Integrity }}" />
+<link rel="manifest" href="/manifest.json" />
 
 {{ $style := resources.Get "build/app.css" }}
 {{ $secureStyle := $style | resources.Fingerprint "sha512" }}
