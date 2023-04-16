@@ -1,3 +1,5 @@
 assets/build/*
 node_modules/*
 public/*
+static/service-worker.js*
+static/workbox-*.js*
