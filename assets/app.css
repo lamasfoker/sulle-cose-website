@@ -29,6 +29,10 @@ article li {
     @apply py-3;
 }
 
+[homepage] p {
+    @apply py-3;
+}
+
 applause-button > div:first-child {
     @apply hidden;
 }

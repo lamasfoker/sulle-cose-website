@@ -1,6 +1,6 @@
 <meta property="og:site_name" content="{{ $.Site.Title }}">
 <meta property="og:title" content="{{ $.Page.Title }}">
-<meta property="og:type" content="article">
+<meta property="og:type" content="{{ $.Param "og_type" }}">
 <meta property="og:url" content="{{ $.Page.Permalink }}">
 <meta property="og:description" content="{{ $.Page.Description }}">
 {{ $icon192 := resources.Get "build/icon_192x192.png" }}
