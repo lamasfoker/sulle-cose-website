@@ -3,7 +3,6 @@ languageCode: 'it-IT'
 defaultContentLanguage: it
 title: 'Sulle Cose'
 enableGitInfo: true
-enableRobotsTXT: true
 Params:
   author:
     display_name: "🐙 Io"
