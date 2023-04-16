@@ -4,7 +4,7 @@ date: 2023-04-14T00:17:47+02:00
 description: La Resistenza durante la Seconda Guerra Mondiale è stata un simbolo di coraggio contro l'oppressione. Anche se l'apporto militare potrebbe essere stato limitato, il suo impatto morale è stato significativo. La sua eredità ci ricorda di mantenere viva la fiamma della libertà e della giustizia.
 ---
 
-"Quando si guarda indietro nella storia, si può notare che vi sono stati momenti in cui l'umanità si è trovata di fronte a una scelta: accettare passivamente il destino oppure lottare per cambiare il corso degli eventi." È così che inizia il racconto di mio nonno, un uomo sagace e pieno di aneddoti, che mi ha trasmesso la sua visione del mondo.
+Quando si guarda indietro nella storia, si può notare che vi sono stati momenti in cui l'umanità si è trovata di fronte a una scelta: accettare passivamente il destino oppure lottare per cambiare il corso degli eventi. È così che inizia il racconto di mio nonno, un uomo sagace e pieno di aneddoti, che mi ha trasmesso la sua visione del mondo.
 
 Uno di questi momenti storici è stato quello della Resistenza in Europa durante la Seconda Guerra Mondiale. Un periodo che ha visto uomini e donne di tutte le età, provenienti da diversi ceti sociali e professioni, unirsi per combattere l'oppressione del regime fascista e nazista.
 
