@@ -23,11 +23,12 @@ module.exports = {
             dir: 'ltr',
             orientation: 'any',
             prefer_related_applications: false,
+            publicPath: '/' ,
             icons: [
                 {
                     src: './assets/favicon.png',
                     sizes: [192, 180, 167, 152, 144, 120, 114, 96, 76, 72, 60, 57, 32, 16],
-                    destination: '../../static/icon',
+                    destination: 'icon',
                 },
             ],
         }),
