@@ -1,5 +1,5 @@
 ---
-title: "La Prigione Un Luogo per La Riabilitazione O Solo per I Pericolosi"
+title: "La prigione: un luogo per la riabilitazione o solo per i pericolosi?"
 date: 2023-04-20T19:32:53+02:00
 description: La prigione dovrebbe essere riservata ai pericolosi e la riabilitazione dovrebbe sostituire la punizione indiscriminata. Una visione per un futuro giusto e inclusivo.
 ---
