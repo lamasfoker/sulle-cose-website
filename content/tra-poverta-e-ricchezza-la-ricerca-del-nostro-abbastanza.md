@@ -1,5 +1,5 @@
 ---
-title: "Tra povertà e ricchezza: la ricerca del nostro ""abbastanza"""
+title: "Tra povertà e ricchezza: la ricerca del nostro \"abbastanza\""
 date: 2023-04-25T00:09:29+02:00
 description: "Trova il tuo 'abbastanza' personale per una vita appagante. L'equilibrio tra povertà e ricchezza è importante, così come vivere con i propri valori."
 ---
