@@ -2,9 +2,9 @@
 title: "Il valore della giusta misura: l'arte di assegnare il prezzo 
 corretto alle cose"
 date: 2023-04-27T00:31:52+02:00
-description: L'importanza di attribuire il giusto valore alle cose va al 
+description: "L'importanza di attribuire il giusto valore alle cose va al 
 di là delle semplici transazioni economiche: è una questione di etica, 
-responsabilità e consapevolezza.
+responsabilità e consapevolezza."
 ---
 
 In un mondo in cui tutto sembra avere un prezzo e le transazioni 
