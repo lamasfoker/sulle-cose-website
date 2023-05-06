@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const $publicationDate = $('time');
     if ($publicationDate) {
         let options = {'day': '2-digit', 'month': 'long', 'year': 'numeric'};
-        $publicationDate.innerText = new Date().toLocaleString($publicationDate.getAttribute('languageCode'), options);
+        const date = new Date($publicationDate.getAttribute('datetime'));
+        $publicationDate.innerText = date.toLocaleString($publicationDate.getAttribute('languageCode'), options);
     }
 
     const $articleLinks = $$('article a');
