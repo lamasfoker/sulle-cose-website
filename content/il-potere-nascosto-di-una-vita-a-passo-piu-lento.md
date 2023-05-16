@@ -25,14 +25,14 @@ Abituati a vivere in una cultura dell'immediatezza, siamo ossessionati
 dall'efficienza e dalla produttività. La tecnologia ci ha permesso di fare 
 di più in meno tempo, ma ciò non significa necessariamente che stiamo 
 vivendo meglio. Secondo uno 
-studio<pre>[[1]](https://www.apa.org/topics/stress/tips)</pre> 
+studio<sup>[[1]](https://www.apa.org/topics/stress/tips)</sup> 
 pubblicato dall'American Psychological 
 Association, la velocità con cui viviamo può portare a stress, ansia e 
 altri problemi psicologici.
 
 Inoltre, la nostra ossessione per la rapidità ci impedisce di dedicare 
 tempo alle attività che ci rendono veramente felici. Un 
-rapporto<pre>[[2]](https://hbr.org/2018/08/5-things-to-do-when-you-feel-overwhelmed-by-your-workload)</pre> 
+rapporto<sup>[[2]](https://hbr.org/2018/08/5-things-to-do-when-you-feel-overwhelmed-by-your-workload)</sup> 
 di 
 Harvard Business Review ha evidenziato come, spesso, le persone che 
 riescono a rallentare e a riflettere sulle proprie priorità sono più 
@@ -46,7 +46,7 @@ personale e professionale.
 
 Una delle tecniche più efficaci per rallentare è praticare la mindfulness, 
 ovvero l'attenzione consapevole al momento presente. La 
-ricerca<pre>[[3]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3679190/)</pre> 
+ricerca<sup>[[3]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3679190/)</sup> 
 dimostra 
 che la mindfulness può ridurre lo stress e migliorare il benessere 
 generale. Inoltre, la mindfulness ci aiuta a concentrarci su ciò che è 
@@ -55,7 +55,7 @@ di vivere una vita più appagante.
 
 Un'altra strategia per rallentare è quella di dedicare più tempo alle 
 relazioni personali. Le 
-statistiche<pre>[[4]](https://www.pewresearch.org/short-reads/2022/11/22/partisans-agree-time-with-family-and-friends-is-meaningful-and-fulfilling/)</pre> 
+statistiche<sup>[[4]](https://www.pewresearch.org/short-reads/2022/11/22/partisans-agree-time-with-family-and-friends-is-meaningful-and-fulfilling/)</sup> 
 mostrano che le persone che dedicano 
 tempo alla famiglia e agli amici sono più felici e meno sole. Prendersi il 
 tempo per coltivare relazioni significative può portare a una maggiore 
